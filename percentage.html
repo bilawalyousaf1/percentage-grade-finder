@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Percentage - 2026 Board Rules</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="percentagepage">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./grade.html">Find Grade</a></li>
+          <li><a href="./percentage.html">Find Percentage</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form class="percentage-form">
+        <h2 style="text-align: center; margin-bottom: 1rem; color: #333">
+          Calculate Your Percentage
+        </h2>
+        <input
+          type="number"
+          id="obt"
+          placeholder="Enter Obtained Marks"
+          min="0"
+          required
+        />
+        <input
+          type="number"
+          id="total"
+          placeholder="Enter Total Marks"
+          min="1"
+          required
+        />
+        <p id="output" class="output"></p>
+        <button type="submit" id="btn">Calculate Percentage</button>
+      </form>
+    </main>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 1rem;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      "
+    >
+      <p>&copy; 2026 Percentage & Grade Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
